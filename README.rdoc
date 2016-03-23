@@ -33,3 +33,88 @@ Lec 192:  Set up a new project
   local: git init
         git remote add origin git@github.com:1wintersweet/photo-app.git
   set up a home page by creating a controller with an action
+  
+  
+  
+  git remote add origin git@github.com:1wintersweet/photo-app.git
+   64  git init
+   65  git remote add origin git@github.com:1wintersweet/photo-app.git
+   66  git status
+   67  cd ..
+   68  rails new photo-app
+   69  cd photo-app/
+   70  git init
+   71  git remote add origin git@github.com:1wintersweet/photo-app.git
+   72  rails generate controller welcome index
+   73  bundle install --without production
+   74  git add -A
+   75  git commit -m "initial project commit"
+   76  git push origin master
+   77  git remove add origin git@github.com:1wintersweet/photo-app.git
+   78  git remote add origin git@github.com:1wintersweet/photo-app.git
+   79  git push
+   80  heroku
+   81  heroku create
+   82  git push heroku master
+   83  bundle install --without production
+   84  rails generate devise:install
+   85  rails generate devise User
+   86  rake db:migrate
+   87  rails generate bootstrap:install static
+   88  rails generate bootstrap:layout application
+   89  rails generate devise:views:locale en
+   90  rails generate devise:views:bootstrap_templates
+   91  git pull origin master
+   92  git stash
+   93  git pull origin master
+   94  bundle install --without production
+   95  rails generate devise:install
+   96  rails generate devise User
+   97  rake db:rollback
+   98  rails generate devise User
+   99  rake db:migrate
+  100  rake db:rollback
+  101  rails generate devise User
+  102  rake db:migrate
+  103  bundle install --without production
+  104  rake routes
+  105  rials g bootstrap:install static
+  106  rails g bootstrap:install static
+  107  rails g bootstrap:layout application
+  108  rails g devise:views:locale en
+  109  rails g devise:views:bootstrap_templates
+  110  git add -A
+  111  git commit -m "Add devise and bootstrap styling"
+  112  git push
+  113  git push heroku master
+  114  heroku run rake db:migrate
+  115  rake routes
+  116  heroku addons:create sendgrid:starter
+  117  heroku config:set SENDGRID_USERNAME=wintersweet
+  118  heroku config:set SENDGRID_PASSWORD=Honeydew123
+  119  exit
+  120  cd ../rails_projects/photo-app/
+  121  rails s -p $PORT -b $IP
+  122  cd ../rails_projects/photo-app/
+  123  rake routes
+  124  git add -A
+  125  git commit -m "Set up email functionality for sign up"
+  126  git push 
+  127  git push heroku master
+  128  heroku run rake db:migrate
+  129  heroku logs
+  130  bundle install --without production
+  131  heroku config:set STRIPE_TEST_SECRETE_KEY=sk_test_NaTkcWJtVNk5BeyuuCmtNLj2
+  132  heroku config:set STRIPE_TEST_PUBLISHABLE_KEY=sk_test_NaTkcWJtVNk5BeyuuCmtNLj2
+  133  heroku config:set STRIPE_TEST_PUBLISHABLE_KEY=pk_test_jiSS7jUeLRaSOCUXuvCsQu9E
+  134  cd ../rails_projects/photo-app/
+  135  rails console
+  136  exit
+  137  echo ENV
+  138  echo $ENV
+  139  echo ENV['STRIPE_TEST_SECRETE_KEY']
+  140  echo $ENV['STRIPE_TEST_SECRETE_KEY']
+  141  cd ../rails_projects/photo-app/
+  142  heroku config:set STRIPE_TEST_SECRET_KEY=sk_test_NaTkcWJtVNk5BeyuuCmtNLj2
+  143  rails generate Payment email:string token:string user_id:integer
+  144  rails generate model Payment email:string token:string user_id:integer
